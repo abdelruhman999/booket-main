@@ -38,19 +38,14 @@ export default function Home() {
             <Darkmood.Provider value={{ darkMode, setDarkMode }}>
     <div
       className={`flex relative flex-col 
-         items-center gap-[50px]
+         items-center gap-[50px] 
          w-full ${darkMode ? "bg-gray-900" :''} min-h-screen 
          transition-colors
           duration-300`}
     >
          
               <div className="w-full">
-              <Navpar darkMode={darkMode} setDarkMode={setDarkMode} />
-
-       
-              <Routes>
-                <Route path="/settings" element={<Settings />} />
-              </Routes>
+              <Navpar/>
               <Routes>
                 <Route path="/" element={
                   <>
@@ -59,6 +54,10 @@ export default function Home() {
                   </>
                 } />
               </Routes>
+              </div>
+
+       
+            
               
               <Routes>
               
@@ -100,6 +99,10 @@ export default function Home() {
                />
               </Routes>
 
+              <Routes>
+                <Route path="/settings" element={<Settings />} />
+              </Routes>
+
               {/* <Login/>
               <Register/>
               <PasswordToggle/>
@@ -110,7 +113,7 @@ export default function Home() {
             
                           
 
-    </div>
+  
             </Darkmood.Provider>
             </Show_DivContext.Provider>
           </ActiveContext.Provider>

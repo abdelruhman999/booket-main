@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import homeImage from "../assets/Sekka Logo.png"; 
+import { Darkmood } from '../pages/Home';
 
 
-export default function Navpar({ darkMode, setDarkMode }) {
+export default function Navpar() {
+  const {darkMode} = useContext(Darkmood)
   return (
     <div className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-[#] '}
       w-full font-Inter font-medium text-[18px]   flex justify-between items-center 
@@ -25,18 +27,7 @@ export default function Navpar({ darkMode, setDarkMode }) {
 
         <div className='pr-[20px] '>
 
-      <div
-        className=" relative w-16 h-8 flex items-center bg-gray-300 dark:bg-gray-700 
-        rounded-full  cursor-pointer transition-all duration-300"
-        onClick={() => setDarkMode(!darkMode)}
-      >
-        <div
-          className={`absolute  w-6 h-6 flex items-center justify-center rounded-full shadow-md transition-transform duration-300 
-            ${darkMode ? 'translate-x-8 bg-gray-900' : 'translate-x-0 bg-yellow-400'}`}
-        >
-          {darkMode ? '🌙' : '☀️'}
-        </div>
-      </div>
+    
         </div>
       
       

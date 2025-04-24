@@ -8,7 +8,7 @@ import logo from '../assets/WhatsApp_Image_2025-04-18_at_04.07.13_e9a3b56d-remov
 import { HiXMark } from "react-icons/hi2";
 
 export default function Navpar() {
-  const {darkMode} = useContext(Darkmood)
+  // const {darkMode} = useContext(Darkmood)
   const {show_Div_Sitting , setShow_Div_Sitting} = useContext(show_Div_Sitting_context)
   const [small_div , setSmall_div] = useState(false)
   return (

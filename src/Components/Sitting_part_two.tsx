@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { ActiveContext, Darkmood } from '../pages/Home'
+import { ActiveContext, Darkmood, show_Div_Sitting_context } from '../pages/Home'
 import logo from '../assets/WhatsApp_Image_2025-03-07_at_04.59.48_47734753-removebg-preview.png'
 import logo1 from '../assets/WhatsApp Image 2025-03-08 at 01.27.10_7c27d063.jpg'
 import { BsPersonCircle } from "react-icons/bs";
@@ -17,6 +17,8 @@ import Swal from "sweetalert2";
 export default function Sitting_part_two() {
     const {active , setActive} = useContext(ActiveContext)
     const {darkMode, setDarkMode} = useContext(Darkmood)
+      const {show_Div_Sitting , setShow_Div_Sitting} = useContext(show_Div_Sitting_context)
+    
     const navigate = useNavigate()
   return (
        <div className={`flex xs:w-[300px] ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-[#374957]'} flex-col h-[550px] items-center shadow-lg shadow-gray-300 rounded-2xl gap-[10px]   p-[10px]`}>
@@ -32,6 +34,7 @@ export default function Sitting_part_two() {
                 <Link
                 to={'/settings'}
                 onClick={()=>{
+                  setShow_Div_Sitting(false)
                   setActive(0)
                 }}
                 className={`flex border border-gray-200 w-full justify-end p-[10px] rounded-xl  gap-[10px] cursor-pointer items-center ${active === 0 ? 'text-white bg-[#7367F0]' : darkMode ? 'text-white hover:bg-gray-700' : 'text-[#374957]'}`}>
@@ -41,6 +44,7 @@ export default function Sitting_part_two() {
                 <Link
                    to={'/settings'}
                 onClick={()=>{
+                  setShow_Div_Sitting(false)
                   setActive(1)
                 }}
                 className={`flex border border-gray-200 w-full justify-end p-[10px] rounded-xl  gap-[10px] cursor-pointer items-center ${active === 1 ? 'text-white bg-[#7367F0]' : darkMode ? 'text-white hover:bg-gray-700' : 'text-[#374957]'}`}>
@@ -64,6 +68,7 @@ export default function Sitting_part_two() {
                 <Link
                    to={'/settings'}
                 onClick={()=>{
+                  setShow_Div_Sitting(false)
                   setActive(2)
                 }}
                 className={`flex border border-gray-200 w-full justify-end  p-[10px] rounded-xl gap-[10px] cursor-pointer items-center ${active === 2 ? 'text-white bg-[#7367F0]' : darkMode ? 'text-white hover:bg-gray-700' : 'text-[#374957]'}`}>
@@ -72,6 +77,7 @@ export default function Sitting_part_two() {
                 </Link>
                 <div
                 onClick={()=>{
+                  setShow_Div_Sitting(false)
                   Swal.fire({
                     title: "هل أنت متأكد؟",
                     text: "لن تتمكن من التراجع عن هذا!",
@@ -112,6 +118,7 @@ export default function Sitting_part_two() {
                 className={`flex  w-full justify-center p-[10px] rounded-xl gap-[10px] items-center ${darkMode ? 'bg-gray-700' : 'bg-[#F0F0F0]'}`}>
               <div
               onClick={()=>{
+                setShow_Div_Sitting(false)
                 setDarkMode(true)
               }}
                 className={`flex h-[32px] cursor-pointer justify-center p-[5px]  w-[140px] rounded-xl gap-[10px] duration-500 items-center ${darkMode ? 'bg-gray-600 text-white' : ''}`}>
@@ -121,6 +128,7 @@ export default function Sitting_part_two() {
     
               <div
               onClick={()=>{
+                setShow_Div_Sitting(false)
                 setDarkMode(false)
               }}
                 className={`flex justify-center h-[32px] p-[5px] cursor-pointer  w-[140px] rounded-2xl gap-[10px] duration-500 items-center ${darkMode ? 'text-white' : 'bg-white'}`}>

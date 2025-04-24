@@ -1,8 +1,6 @@
 import React, { useContext } from 'react'
 import { IoTicket } from "react-icons/io5";
 import { Darkmood } from '../pages/Home';
-import { BsPatchCheck } from "react-icons/bs";
-import { SlEnergy } from "react-icons/sl";
 import logo1 from '../assets/icons8-verified-badge-48.png'
 import logo2 from '../assets/icons8-flash-on-50.png'
 import logo3 from '../assets/30496bc1-7e6e-44b2-9a3c-fd7c9bae3759-removebg-preview.png'
@@ -35,7 +33,7 @@ export default function Booking() {
                         tickets is no <br />
                         longer <span className="text-white">difficult</span>
                       </h1>
-                      <p className="text-sm xs:text-xs self-end pt-[80px] xs:pt-[20px]  w-[200px] xs:w-[120px]  text-white/90">
+                      <p className="text-sm xs:text-xs self-end pt-[50px] xs:pt-[20px]  w-[200px] xs:w-[120px]  text-white/90">
                         Ordering tickets is no longer difficult. A seamless,
                         hassle_free process awaits, ensuring convenience and
                         swift transactions.

@@ -65,7 +65,9 @@ export default function Home() {
              
               {
              show_Div_Sitting && 
-             <div className='bg-black z-40 absolute inset-0 bg-opacity-50  '>
+             <div
+              onClick={() => setShow_Div_Sitting(false)}
+             className='bg-black z-40 absolute inset-0 bg-opacity-50  '>
              <div className='absolute xs:right-[20px] xs:top-[100px]  border border-gray-50 rounded-2xl top-[120px] right-[70px] bg-white shadow-lg'>
                 <Sitting_part_two/>
                 <div className={`absolute  top-[-80px]

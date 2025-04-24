@@ -49,9 +49,12 @@ export default function Sitting_partone() {
                 <div 
                 className={`flex border border-gray-200 w-full xs:justify-center justify-between p-[10px] rounded-xl gap-[10px] cursor-pointer items-center ${darkMode ? 'text-white hover:bg-gray-700' : 'text-[#374957]'}`}>
                  <div className='flex w-full xs:justify-end gap-[6px] items-center'>
-                 <MdOutlineKeyboardArrowDown className='xs:hidden' />
-                 <p className='font-semibold xs:hidden text-lg'>English</p>
+                
                    <img src={logo1} className='w-[29px] h-[18px]' />
+                 <select className={`font-semibold xs:hidden ${darkMode ? 'text-gray-300 bg-gray-800' : 'text-[#535763]'}`} name="" id="">
+                    <option value="" className='font-semibold xs:hidden '>English</option>
+                    <option value="" className='font-semibold xs:hidden '>العربية</option>
+                 </select>
                  </div>
                  <div className='flex gap-2 items-center'>
                   <p className='text-xl xs:hidden'>اللغه</p>

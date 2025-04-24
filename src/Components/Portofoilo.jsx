@@ -17,19 +17,25 @@ export default function Portofoilo() {
      
         <div className='flex flex-col gap-[2px] items-end'>
           <p className={`text-sm ${darkMode ? 'text-purple-300' : 'text-purple-400'}`}>البريد الالكتروني</p>
-          <div className={`border ${darkMode ? 'border-gray-600 bg-gray-700 text-gray-200' : 'border-gray-200 text-[#374957]'}
-            w-[342px] xs:w-[200px] h-[53px] flex items-center p-[10px] rounded-xl gap-[10px] cursor-pointer justify-end`}>
-            <p className='text-sm font-semibold'>shahdelmnyar@gmail.com</p>
-          </div>
+          <input
+          type="email"
+          placeholder="shahdelmnyar@gmail.com"
+          className={`border ${darkMode ? 'border-gray-600 bg-gray-700 text-gray-200' : 'border-gray-200 text-[#374957]'}
+            w-[342px] xs:w-[200px] h-[53px] px-[10px] rounded-xl gap-[10px] cursor-pointer text-sm font-semibold text-end`}
+        />
+
         </div>
         
        
         <div className='flex flex-col gap-[2px] items-end'>
           <p className={darkMode ? 'text-purple-300' : 'text-purple-400'}>الاسم كامل</p>
-          <div className={`border ${darkMode ? 'border-gray-600 bg-gray-700 text-gray-200' : 'border-gray-200 text-[#374957]'}
-            w-[342px] xs:w-[200px] h-[53px] flex items-center p-[10px] rounded-xl gap-[10px] cursor-pointer justify-end`}>
-            <p className='text-sm font-semibold'>Shahd Elmnyar</p>
-          </div>
+          <input
+          type="email"
+          placeholder="shahd elmnyar"
+          className={`border ${darkMode ? 'border-gray-600 bg-gray-700 text-gray-200' : 'border-gray-200 text-[#374957]'}
+            w-[342px] xs:w-[200px] h-[53px] px-[10px] rounded-xl gap-[10px] cursor-pointer text-sm font-semibold text-end`}
+        />
+
         </div>
       </div>
       

@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './Button'
-import logo from '../assets/Capture.jpg'
+import logo from '../assets/Capture.png'
 import logo1 from '../assets/WhatsApp_Image_2025-03-06_at_01.40.08_46add58a-removebg-preview.png'
 import logo2 from '../assets/WhatsApp_Image_2025-03-06_at_01.41.53_fb3296b9-removebg-preview.png'
 import logo3 from '../assets/WhatsApp_Image_2025-03-06_at_01.42.19_a918c74f-removebg-preview.png'

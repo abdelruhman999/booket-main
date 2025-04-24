@@ -7,7 +7,7 @@ export default function Card_Booket() {
      const { setShow}= useContext(Showcontext)
   return (
      <div className='relative'>
-             <img src={logo}  className='w-[328x]    h-[151px]' alt="" />
+             <img src={logo}  className='w-[328x]   h-[151px]' alt="" />
              <div className='absolute  flex-row-reverse justify-end
               p-[10px] pt-[15px] flex xs:gap-[0px] gap-[20px]
               items-center inset-0

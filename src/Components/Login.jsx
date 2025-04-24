@@ -1,6 +1,7 @@
 import React , { useState }from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 
 const Login = () => {
@@ -70,9 +71,11 @@ const Login = () => {
           </button>
           <p className="new_account">
             Don't Have an account?{" "}
-            <a href="./register" className="login_link">
+            <Link
+            to={'/register'} 
+            className="login_link">
               Register
-            </a>
+            </Link>
           </p>
           <div class="google-btn">
             <img src="/assets/google.png" class="google-logo"/>

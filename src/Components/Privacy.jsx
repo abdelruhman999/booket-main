@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Darkmood } from '../pages/Home';
 
 export default function Privacy() {
+  const { darkMode } = useContext(Darkmood);
+
   return (
-    <div className='flex flex-col items-end gap-[20px] shadow-gray-300
-     bg-white rounded-xl shadow-xl border border-gray-200 p-[20px]'>
-        <p className='text-xl font-semibold text-black'> : سياسة الخصوصية  </p>
-        <p className='text-wrap text-end font-normal xs:text-xs' >
+    <div className={`flex flex-col items-end gap-[20px] rounded-xl border p-[20px]
+      ${darkMode ? 'bg-gray-800 text-white border-gray-600 shadow-black' 
+                 : 'bg-white text-black border-gray-200 shadow-gray-300'} shadow-xl`}>
+      
+      <p className='text-xl font-semibold'>: سياسة الخصوصية</p>
+
+      <p className='text-wrap text-end font-normal xs:text-xs' >
         اكتشف خيارات تأجير السيارات في مصر مع تأجير السيارات اختر من بين مجموعة من خيارات السيارات والخاصة المحلية اختر من بين مجموعة من خيارات السيارات والخاصة المحلية اختر من بين مجموعة من خيارات السيارات والخاصة المحلية اختر من بين مجموعة من خيارات السيارات والخاصة المحلية اختر من بين مجموعة من خيارات السيارات والخاصة المحلية اختر من بين مجموعة من خيارات السيارات والخاصة المحلية اختر من بين مجموعة من خيارات السيارات والخاصة المحليةاختر من بين مجموعة من خيارات السيارات والخاصة المحلية اختر من بين مجموعة من خيارات السيارات والخاصة المحليةاختر من بين مجموعة من خيارات السيارات والخاصة المحليةاختر من بين مجموعة من خيارات السيارات والخاصة المحلية اختر من بين مجموعة من خيارات السيارات والخاصة المحليةاختر من بين مجموعة من خيارات السيارات والخاصة المحليةاختر من بين مجموعة من خيارات السيارات والخاصة المحليةاختر من بين مجموعة من خيارات السيارات والخاصة المحليةاختر من بين مجموعة من خيارات السيارات والخاصة المحلية
         </p>
     </div>

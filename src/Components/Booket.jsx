@@ -3,7 +3,10 @@ import Card_Booket from './Card_Booket'
 
 export default function Booket() {
   return (
-    <div className='flex flex-wrap justify-center gap-[20px]' id="#booking">
+    <div
+  
+     className='flex flex-wrap justify-center gap-[20px]' 
+     >
         <Card_Booket/>
         <Card_Booket/>
         <Card_Booket/>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -87,9 +88,11 @@ const Register = () => {
           </button>
           <p className="new_account">
             Do You Have an account?{" "}
-            <a href="./login" className="login_link">
+            <Link 
+            to={'/login'}
+            className="login_link">
               Login
-            </a>
+            </Link>
           </p>
           <div className="google-btn">
             <img src="/assets/google.png" className="google-logo" />

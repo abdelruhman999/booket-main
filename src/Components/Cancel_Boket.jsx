@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import logo from '../assets/Capture.jpg'
+import logo from '../assets/Capture.png'
 import logo1 from '../assets/WhatsApp_Image_2025-03-07_at_03.40.46_97a1ec4c-removebg-preview.png'
 import { FaFileArrowDown } from "react-icons/fa6";
 import { FaTrainTram } from "react-icons/fa6";

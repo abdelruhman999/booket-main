@@ -13,8 +13,8 @@ const Search = () => {
 
   return (
     <section
-      className={`flex flex-col items-center p-10   ${darkMode ? 'bg-gray-900' : 'bg-[#B9B3FA]'}`}
-      id="search"
+      className={`flex flex-col items-center p-10  bg-[#B9B3FA] `}
+      id="TimeTable"
     >
       <div className="flex gap-4 flex-wrap justify-center ">
 

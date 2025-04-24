@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Countercontext, Showcontext } from '../pages/Home'
+import { Countercontext, Darkmood, Showcontext } from '../pages/Home'
 import { TbXboxXFilled } from "react-icons/tb";
 import Question_one from './Question_one'
 import Button from './Button'
@@ -11,14 +11,16 @@ import Question_five from './Question_five'
 export default function Steps() {
   const {counter , setCounter} = useContext(Countercontext)
   const {setShow} =  useContext(Showcontext)
+  const { darkMode } = useContext(Darkmood);
   return (
    
     
 
-    <div className='p-[20px] 
-    rounded-[50px] bg-white flex flex-col items-center
+    <div className={`p-[20px] 
+    rounded-[50px]  flex flex-col items-center
       shadow-md relative  gap-[50px]
-    '>
+    ${darkMode ? 'bg-gray-800' : 'bg-white'}
+    `}>
         <TbXboxXFilled
         onClick={()=>{
           setShow(false)
